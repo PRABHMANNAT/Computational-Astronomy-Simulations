@@ -17,7 +17,8 @@
     "build": "npm run build -w @astro-sim/web",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "lint": "next lint apps/web"
+    "lint": "eslint simulations",
+    "format": "prettier --check simulations"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.1",

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import { DAY_SECONDS, SOLAR_MU, TWO_PI } from "../data/constants";
+import { DAY_SECONDS, TWO_PI } from "../data/constants";
 import { PLANETS } from "../data/planetaryData";
 import { useOrbitalMeasurements } from "../hooks/useOrbitalMeasurements";
 import { useSelectedPlanet } from "../hooks/useSelectedPlanet";

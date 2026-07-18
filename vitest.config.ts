@@ -5,10 +5,13 @@ import { fileURLToPath } from "node:url";
 const rootDirectory = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  esbuild: {
+    jsx: "automatic"
+  },
   test: {
     globals: true,
     environment: "node",
-    include: ["packages/**/*.test.ts", "simulations/**/*.test.ts"]
+    include: ["packages/**/*.test.ts", "simulations/**/*.test.{ts,tsx}"]
   },
   resolve: {
     alias: {
