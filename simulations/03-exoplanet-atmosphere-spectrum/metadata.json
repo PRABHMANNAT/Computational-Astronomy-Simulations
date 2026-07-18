@@ -1,0 +1,1 @@
+{"order":3,"slug":"03-exoplanet-atmosphere-spectrum","name":"Exoplanet Atmosphere Spectrum","category":"Exoplanets","difficulty":"advanced","status":"planned","dimension":"2D","description":"Planned spectrum explorer for simplified molecular absorption signatures in exoplanet atmospheres.","plannedTech":["Next.js","React","SVG","TypeScript","Vitest"]}

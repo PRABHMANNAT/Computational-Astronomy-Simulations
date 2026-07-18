@@ -1,0 +1,1 @@
+{"order":6,"slug":"06-stellar-evolution","name":"Stellar Evolution","category":"Stars","difficulty":"advanced","status":"planned","dimension":"2D","description":"Planned Hertzsprung-Russell diagram explorer for simplified stellar lifecycle paths.","plannedTech":["Next.js","React","SVG","TypeScript","Vitest"]}

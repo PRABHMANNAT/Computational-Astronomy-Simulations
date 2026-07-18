@@ -1,0 +1,29 @@
+{
+  "name": "astronomy-and-astrophysics-simulations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source computational astronomy and astrophysics simulations by Prabhmannat Singh.",
+  "author": "Prabhmannat Singh",
+  "license": "Apache-2.0",
+  "copyright": "Copyright 2026 Prabhmannat Singh",
+  "packageManager": "npm@11.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "simulations/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @astro-sim/web",
+    "build": "npm run build -w @astro-sim/web",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint apps/web"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.8"
+  }
+}

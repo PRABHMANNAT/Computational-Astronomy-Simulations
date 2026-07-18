@@ -1,0 +1,1 @@
+{"order":12,"slug":"12-planet-formation","name":"Planet Formation","category":"Planet Formation","difficulty":"advanced","status":"planned","dimension":"2D","description":"Planned accretion model showing planetesimal growth and orbital clearing in a disk.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

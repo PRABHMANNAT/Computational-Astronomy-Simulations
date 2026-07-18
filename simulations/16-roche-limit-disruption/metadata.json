@@ -1,0 +1,1 @@
+{"order":16,"slug":"16-roche-limit-disruption","name":"Roche Limit Disruption","category":"Tidal Forces","difficulty":"intermediate","status":"planned","dimension":"2D","description":"Planned model showing when tidal forces disrupt a secondary body near a larger primary.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

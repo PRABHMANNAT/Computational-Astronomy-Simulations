@@ -1,0 +1,1 @@
+{"order":8,"slug":"08-pulsar-beam","name":"Pulsar Beam","category":"Compact Stars","difficulty":"intermediate","status":"planned","dimension":"3D","description":"Planned lighthouse-style pulsar beam visualization with rotation period and viewing angle controls.","plannedTech":["Next.js","React Three Fiber","Three.js","TypeScript","Vitest"]}

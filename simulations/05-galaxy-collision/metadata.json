@@ -1,0 +1,1 @@
+{"order":5,"slug":"05-galaxy-collision","name":"Galaxy Collision","category":"Galactic Dynamics","difficulty":"advanced","status":"planned","dimension":"3D","description":"Planned particle-based visual model of interacting galaxies and tidal structures.","plannedTech":["Next.js","React Three Fiber","Three.js","TypeScript","Vitest"]}

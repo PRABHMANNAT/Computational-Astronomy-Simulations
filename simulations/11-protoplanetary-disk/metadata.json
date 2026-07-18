@@ -1,0 +1,1 @@
+{"order":11,"slug":"11-protoplanetary-disk","name":"Protoplanetary Disk","category":"Planet Formation","difficulty":"advanced","status":"planned","dimension":"3D","description":"Planned disk visualization for dust density, gaps, and planet-forming regions around a young star.","plannedTech":["Next.js","React Three Fiber","Three.js","TypeScript","Vitest"]}

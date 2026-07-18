@@ -1,0 +1,1 @@
+{"order":14,"slug":"14-comet-orbit-and-tail","name":"Comet Orbit and Tail","category":"Small Bodies","difficulty":"intermediate","status":"planned","dimension":"2D","description":"Planned comet model with eccentric orbit, solar distance, coma, and tail direction effects.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

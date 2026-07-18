@@ -1,0 +1,11 @@
+{
+  "order": 1,
+  "slug": "01-solar-system-orbits",
+  "name": "Solar System Orbit Simulator",
+  "category": "Orbital Mechanics",
+  "difficulty": "beginner",
+  "status": "planned",
+  "dimension": "2D",
+  "description": "Reference implementation showing the Sun, eight planets, elliptical orbits, labels, camera controls, time controls, and a planet information panel.",
+  "plannedTech": ["Next.js", "React", "HTML Canvas", "TypeScript", "Vitest"]
+}

@@ -1,0 +1,1 @@
+{"order":15,"slug":"15-meteor-shower","name":"Meteor Shower","category":"Small Bodies","difficulty":"beginner","status":"planned","dimension":"2D","description":"Planned meteor shower visualization with radiant point, atmospheric trails, and event intensity.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

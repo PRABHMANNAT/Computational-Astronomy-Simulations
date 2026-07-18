@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@astro-sim/astronomy-data": ["../../packages/astronomy-data/src"],
+      "@astro-sim/orbital-mechanics": ["../../packages/orbital-mechanics/src"],
+      "@astro-sim/physics-engine": ["../../packages/physics-engine/src"],
+      "@astro-sim/shared-utils": ["../../packages/shared-utils/src"],
+      "@astro-sim/solar-system-orbits": ["../../simulations/01-solar-system-orbits/src"],
+      "@astro-sim/visualization-engine": ["../../packages/visualization-engine/src"]
+    },
+    "noEmit": true
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

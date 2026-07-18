@@ -1,0 +1,1 @@
+{"order":7,"slug":"07-supernova-explosion","name":"Supernova Explosion","category":"Stars","difficulty":"advanced","status":"planned","dimension":"2D/3D","description":"Planned visual model of expanding ejecta and simplified supernova brightness over time.","plannedTech":["Next.js","Three.js","Canvas","TypeScript","Vitest"]}

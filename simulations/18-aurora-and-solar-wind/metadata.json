@@ -1,0 +1,1 @@
+{"order":18,"slug":"18-aurora-and-solar-wind","name":"Aurora and Solar Wind","category":"Space Weather","difficulty":"intermediate","status":"planned","dimension":"2D/3D","description":"Planned aurora visualization connecting solar wind, magnetosphere compression, and polar emission regions.","plannedTech":["Next.js","Three.js","Canvas","TypeScript","Vitest"]}

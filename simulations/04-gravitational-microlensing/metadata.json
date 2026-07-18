@@ -1,0 +1,1 @@
+{"order":4,"slug":"04-gravitational-microlensing","name":"Gravitational Microlensing","category":"Relativity","difficulty":"advanced","status":"planned","dimension":"2D","description":"Planned microlensing light-curve simulator for a foreground lens passing near a background source star.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

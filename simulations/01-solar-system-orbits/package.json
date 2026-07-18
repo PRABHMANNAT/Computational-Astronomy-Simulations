@@ -1,0 +1,15 @@
+{
+  "name": "@astro-sim/solar-system-orbits",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@astro-sim/astronomy-data": "0.1.0",
+    "@astro-sim/orbital-mechanics": "0.1.0",
+    "@astro-sim/shared-utils": "0.1.0",
+    "@astro-sim/visualization-engine": "0.1.0",
+    "react": "^19.2.4"
+  }
+}

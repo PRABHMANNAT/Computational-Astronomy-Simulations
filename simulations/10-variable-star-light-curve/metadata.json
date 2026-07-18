@@ -1,0 +1,1 @@
+{"order":10,"slug":"10-variable-star-light-curve","name":"Variable Star Light Curve","category":"Stars","difficulty":"beginner","status":"planned","dimension":"2D","description":"Planned light-curve explorer for periodic stellar brightness variation.","plannedTech":["Next.js","React","SVG","TypeScript","Vitest"]}

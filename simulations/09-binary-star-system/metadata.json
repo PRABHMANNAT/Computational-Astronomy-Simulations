@@ -1,0 +1,1 @@
+{"order":9,"slug":"09-binary-star-system","name":"Binary Star System","category":"Orbital Mechanics","difficulty":"intermediate","status":"planned","dimension":"2D","description":"Planned two-body orbit simulator for binary stars around a shared barycenter.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

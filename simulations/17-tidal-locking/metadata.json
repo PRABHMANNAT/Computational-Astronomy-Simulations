@@ -1,0 +1,1 @@
+{"order":17,"slug":"17-tidal-locking","name":"Tidal Locking","category":"Tidal Forces","difficulty":"intermediate","status":"planned","dimension":"2D","description":"Planned tidal locking visualization comparing orbital period, rotation period, and locked orientation.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

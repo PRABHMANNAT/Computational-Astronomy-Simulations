@@ -1,0 +1,1 @@
+{"order":13,"slug":"13-asteroid-belt-dynamics","name":"Asteroid Belt Dynamics","category":"Small Bodies","difficulty":"intermediate","status":"planned","dimension":"2D","description":"Planned belt dynamics model with asteroid distributions and resonance gaps.","plannedTech":["Next.js","React","Canvas","TypeScript","Vitest"]}

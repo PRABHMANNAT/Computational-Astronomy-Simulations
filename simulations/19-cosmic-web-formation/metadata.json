@@ -1,0 +1,1 @@
+{"order":19,"slug":"19-cosmic-web-formation","name":"Cosmic Web Formation","category":"Cosmology","difficulty":"advanced","status":"planned","dimension":"3D","description":"Planned large-scale structure visualization showing simplified matter clustering into filaments and voids.","plannedTech":["Next.js","React Three Fiber","Three.js","TypeScript","Vitest"]}

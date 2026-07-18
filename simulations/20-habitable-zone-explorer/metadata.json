@@ -1,0 +1,1 @@
+{"order":20,"slug":"20-habitable-zone-explorer","name":"Habitable Zone Explorer","category":"Exoplanets","difficulty":"beginner","status":"planned","dimension":"2D","description":"Planned explorer for stellar luminosity, orbital distance, and conservative or optimistic habitable-zone boundaries.","plannedTech":["Next.js","React","SVG","TypeScript","Vitest"]}
