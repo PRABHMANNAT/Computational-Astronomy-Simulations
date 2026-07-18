@@ -253,6 +253,358 @@ input {
   line-height: 1.45;
 }
 
+/* ---- Solar System Orbit Simulator laboratory layout ---- */
+
+.orbit-lab {
+  display: grid;
+  gap: 16px;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.lab-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(16, 20, 29, 0.82);
+  font-size: 14px;
+}
+
+.phase-inline {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.lab-main {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr) 340px;
+  gap: 16px;
+  align-items: start;
+}
+
+.lab-right {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  max-height: min(780px, calc(100svh - 120px));
+  overflow: auto;
+}
+
+.lab-bottom {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(16, 20, 29, 0.82);
+  overflow: hidden;
+}
+
+.tab-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 8px 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab-button {
+  padding: 9px 13px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tab-button.active {
+  color: var(--foreground);
+  background: var(--panel-strong);
+  border-color: var(--line);
+}
+
+.tab-content {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+.analysis-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.control-panel {
+  max-height: min(780px, calc(100svh - 120px));
+  overflow: auto;
+}
+
+.checkbox-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.select-field {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.select-field select {
+  min-height: 36px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+  color: var(--foreground);
+  font: inherit;
+}
+
+.text-input {
+  flex: 1;
+  min-width: 90px;
+  min-height: 38px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+  color: var(--foreground);
+}
+
+.toggle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.experiment-list {
+  display: grid;
+  gap: 8px;
+}
+
+.hide-planet {
+  color: var(--muted);
+  font-size: 15px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.hide-planet:hover {
+  background: rgba(125, 211, 252, 0.14);
+}
+
+.unit-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.phase-strip {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phase-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.phase-chip.active {
+  border-color: var(--accent);
+  background: rgba(125, 211, 252, 0.14);
+  color: var(--accent);
+}
+
+.phase-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.completion-report {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  border-radius: 8px;
+  background: rgba(74, 222, 128, 0.06);
+}
+
+.graph-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 16px;
+}
+
+.chart-block {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(16, 20, 29, 0.6);
+  min-width: 0;
+}
+
+.chart-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.chart-body {
+  width: 100%;
+  min-width: 0;
+}
+
+.chart-tooltip {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+  font-size: 12px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.accuracy-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.accuracy-badge.excellent {
+  background: rgba(74, 222, 128, 0.16);
+  color: #4ade80;
+}
+
+.accuracy-badge.acceptable {
+  background: rgba(125, 211, 252, 0.16);
+  color: var(--accent);
+}
+
+.accuracy-badge.warning {
+  background: rgba(250, 204, 21, 0.16);
+  color: var(--warning);
+}
+
+.accuracy-badge.invalid {
+  background: rgba(248, 113, 113, 0.16);
+  color: #f87171;
+}
+
+.glossary-symbol {
+  font-family: "Cambria Math", Georgia, serif;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.limitations-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.webgl-fallback {
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  height: 100%;
+  min-height: 320px;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.orbit3d-label {
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(2, 4, 10, 0.66);
+  color: var(--foreground);
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.orbit3d-label.selected {
+  color: var(--accent);
+  border: 1px solid rgba(125, 211, 252, 0.5);
+}
+
+.orbit3d-marker {
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(2, 4, 10, 0.72);
+  color: var(--warning);
+  font-size: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@media (max-width: 1380px) {
+  .lab-main {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .lab-right {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+    max-height: none;
+  }
+}
+
 @media (max-width: 960px) {
   .page-shell {
     padding: 18px;
@@ -270,5 +622,21 @@ input {
   .canvas-stage,
   .orbit-canvas {
     min-height: 520px;
+  }
+
+  .lab-main {
+    grid-template-columns: 1fr;
+  }
+
+  .control-panel {
+    max-height: none;
+  }
+
+  .canvas-stage {
+    order: -1;
+  }
+
+  .toggle-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
