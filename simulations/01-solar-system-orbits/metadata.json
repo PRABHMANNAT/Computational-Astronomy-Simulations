@@ -2,10 +2,21 @@
   "order": 1,
   "slug": "01-solar-system-orbits",
   "name": "Solar System Orbit Simulator",
+  "title": "Solar System Orbit Simulator",
   "category": "Orbital Mechanics",
-  "difficulty": "beginner",
-  "status": "planned",
-  "dimension": "2D",
-  "description": "Reference implementation showing the Sun, eight planets, elliptical orbits, labels, camera controls, time controls, and a planet information panel.",
-  "plannedTech": ["Next.js", "React", "HTML Canvas", "TypeScript", "Vitest"]
+  "difficulty": "intermediate",
+  "status": "implemented",
+  "dimension": "3D",
+  "author": "Prabhmannat Singh",
+  "description": "An interactive 3D Solar System laboratory for exploring planetary orbits, Kepler's laws, orbital velocity, gravity, energy and angular momentum.",
+  "plannedTech": ["Next.js", "React", "TypeScript", "Three.js", "React Three Fiber", "Zustand", "Recharts", "Vitest"],
+  "tags": [
+    "astronomy",
+    "astrophysics",
+    "orbital-mechanics",
+    "kepler-laws",
+    "solar-system",
+    "three-js",
+    "typescript"
+  ]
 }
