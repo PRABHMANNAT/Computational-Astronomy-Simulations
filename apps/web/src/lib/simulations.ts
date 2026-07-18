@@ -27,10 +27,14 @@ export function getSimulationMetadata(): SimulationMetadata[] {
 
   return readdirSync(simulationsDirectory, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => {
-      const metadataPath = path.join(simulationsDirectory, entry.name, "metadata.json");
-      const metadata = JSON.parse(readFileSync(metadataPath, "utf8")) as SimulationMetadata;
-      return metadata;
+    .flatMap((entry) => {
+      // Skip folders without readable metadata (e.g. stray copies or drafts).
+      try {
+        const metadataPath = path.join(simulationsDirectory, entry.name, "metadata.json");
+        return [JSON.parse(readFileSync(metadataPath, "utf8")) as SimulationMetadata];
+      } catch {
+        return [];
+      }
     })
     .sort((a, b) => a.order - b.order);
 }

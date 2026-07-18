@@ -21,8 +21,9 @@ export function Sun() {
         <sphereGeometry args={[radius * 1.25, 32, 32]} />
         <meshBasicMaterial color="#fbbf24" transparent opacity={0.22} />
       </mesh>
-      <pointLight color="#fff7e0" intensity={220} distance={0} decay={1.2} />
-      <ambientLight intensity={0.32} />
+      <pointLight color="#fff7e0" intensity={260} distance={0} decay={1.1} />
+      <ambientLight intensity={0.55} />
+      <hemisphereLight args={["#cfe4ff", "#141821", 0.35]} />
     </group>
   );
 }

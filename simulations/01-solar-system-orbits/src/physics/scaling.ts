@@ -52,7 +52,7 @@ export function scalePositionAu(
  * relative to orbital distances; a real-scale Earth would be invisible.
  */
 export function scalePlanetRadius(radiusKm: number, planetRadiusScale: number): number {
-  const base = Math.max(0.035, Math.sqrt(radiusKm / 6371) * 0.09);
+  const base = Math.max(0.06, Math.sqrt(radiusKm / 6371) * 0.13);
   return base * sanitizeScale(planetRadiusScale);
 }
 

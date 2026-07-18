@@ -67,8 +67,8 @@ export function OrbitPath({
       points={points}
       color={color}
       transparent
-      opacity={selected ? 0.85 : 0.3}
-      lineWidth={selected ? 1.6 : 1}
+      opacity={selected ? 0.95 : 0.5}
+      lineWidth={selected ? 1.8 : 1.2}
     />
   );
 }

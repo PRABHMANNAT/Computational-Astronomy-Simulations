@@ -139,9 +139,9 @@ export function Planet({
           <sphereGeometry args={[radius, 32, 32]} />
           <meshStandardMaterial
             color={planet.color}
-            emissive={selected ? planet.color : "#000000"}
-            emissiveIntensity={selected ? 0.45 : 0}
-            roughness={0.7}
+            emissive={planet.color}
+            emissiveIntensity={selected ? 0.5 : 0.18}
+            roughness={0.65}
           />
         </mesh>
         {selected ? (

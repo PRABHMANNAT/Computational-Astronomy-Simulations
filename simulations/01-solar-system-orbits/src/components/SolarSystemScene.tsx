@@ -484,7 +484,7 @@ export function SolarSystemScene() {
 
   return (
     <Canvas
-      camera={{ position: [10, -10, 7], up: [0, 0, 1], fov: 50, near: 0.01, far: 800 }}
+      camera={{ position: [6.5, -6.5, 4.6], up: [0, 0, 1], fov: 50, near: 0.01, far: 800 }}
       dpr={[1, 2]}
       gl={{ antialias: true, powerPreference: "high-performance" }}
     >

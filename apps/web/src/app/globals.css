@@ -286,6 +286,13 @@ input {
   align-items: start;
 }
 
+/* R3F sizes its canvas with height: 100%, which needs an explicit height
+   (min-height alone resolves percentage children to auto → 150px canvas). */
+.lab-main .canvas-stage {
+  height: min(760px, calc(100svh - 140px));
+  min-height: 480px;
+}
+
 .lab-right {
   display: grid;
   gap: 16px;
@@ -634,6 +641,11 @@ input {
 
   .canvas-stage {
     order: -1;
+  }
+
+  .lab-main .canvas-stage {
+    height: min(520px, 70svh);
+    min-height: 360px;
   }
 
   .toggle-grid {
