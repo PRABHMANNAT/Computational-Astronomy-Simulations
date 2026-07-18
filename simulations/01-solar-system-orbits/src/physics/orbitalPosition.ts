@@ -1,10 +1,11 @@
+import { SOLAR_MU } from "../data/constants";
 import type { OrbitalElementsSI, OrbitalState, Vector3D } from "../types/planet";
 import {
   normalizeAngle,
   solveKeplerEquation,
   trueAnomalyFromEccentric
 } from "./keplerEquation";
-import { meanAnomalyAt, meanMotion } from "./orbitalElements";
+import { meanAnomalyAt } from "./orbitalElements";
 
 /** Instantaneous Sun–planet distance from the eccentric anomaly: r = a (1 − e cos E). */
 export function radiusFromEccentricAnomaly(
@@ -113,8 +114,13 @@ export function orbitalStateAt(elements: OrbitalElementsSI, elapsedS: number): O
 
   // Perifocal velocity from the time derivative of the position:
   // vx = −(n a² / r) sin E, vy = (n a² / r) √(1−e²) cos E.
-  const n = meanMotion(orbitalPeriodS);
-  const speedFactor = (n * a * a) / radiusM;
+  //
+  // n is taken as the two-body Kepler value √(μ/a³) rather than 2π/T from the
+  // dataset, so velocity, energy and angular momentum are exactly consistent
+  // with vis-viva under μ = GM☉. The tiny difference between the dataset
+  // period and the Kepler period is surfaced in the numerical-accuracy panel.
+  const keplerMeanMotion = Math.sqrt(SOLAR_MU / (a * a * a));
+  const speedFactor = (keplerMeanMotion * a * a) / radiusM;
   const perifocalVelocity: Vector3D = {
     x: -speedFactor * Math.sin(E),
     y: speedFactor * Math.sqrt(1 - e * e) * Math.cos(E),
